@@ -9,7 +9,6 @@ type prop = {
 const BackgroundLayout = ({ children }: prop) => {
   return (
     <div className="relative min-h-screen bg-dark">
-      {/* Background image with overlay */}
       <div
         className="absolute inset-0 z-0"
         style={{
@@ -21,7 +20,6 @@ const BackgroundLayout = ({ children }: prop) => {
         {/* Overlay with blur - reduced opacity */}
         <div className="absolute inset-0 bg-[#161616]/90 ssm:bg-[#161616]/60 backdrop-blur-sm" />
       </div>
-      {/* Content */}
       <div className="relative z-10">{children}</div>
     </div>
   );
