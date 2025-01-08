@@ -20,11 +20,20 @@ export default {
         'heading':  "Prosto One, serif",
       },
       screens: {
-        'xxl': {'max': '1279px'},
+        'xxl': {'max': '1280px'},
         'lgg': {'max': '1024px'},
         'mdd': {'max': '820px'},
         'ssm': {'max': '639px'},
         'sssm': {'max': '390px'},
+      },
+      animation: {
+        heightGrow: 'heightGrow 1s ease-out forwards',
+      },
+      keyframes: {
+        heightGrow: {
+          '0%': { height: '0' },
+          '100%': { height: '130px' },
+        },
       },
     },
   },
