@@ -87,6 +87,12 @@ const Projects = () => {
       link: "https://digital-agency-company-six.vercel.app",
       Stack: 'ReactJS, JavaScript, TypeScript, TailwindCSS'
     },
+    {
+      title: "",
+      description: "Reference my github repository for more information",
+      link: "https://github.com/Joylinton04",
+      Stack: ''
+    },
   ];
 
   return (

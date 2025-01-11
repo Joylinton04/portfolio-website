@@ -38,7 +38,7 @@ const LevelUI: React.FC<LevelUIProps> = ({ length, label }) => {
               key={index}
               className={`h-[3.5rem] w-[1rem] bg-highlight transform transition-all duration-700 delay-${
                 index * 100
-              } ${isVisible ? 'scale-y-100' : 'scale-y-0'}`}
+              } ${isVisible ? 'scale-y-110' : 'scale-y-0'}`}
               style={{
                 transformOrigin: 'bottom',
                 transitionDelay: `${index * 0.1}s`
@@ -122,7 +122,7 @@ const Stack = () => {
           <div
             key={index}
             className="h-56 border-[3px] border-title flex flex-col justify-between p-4 ssm:col-span-2
-                     transform transition-all duration-500 hover:border-highlight hover:shadow-lg hover:shadow-highlight/20"
+                     transform transition-all duration-500 hover:border-highlight hover:shadow-lg hover:shadow-highlight/20 font-body"
           >
             <LevelUI length={skill.level} label={skill.label} />
           </div>
