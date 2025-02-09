@@ -26,7 +26,7 @@ type socialLinksProp = {
   icon: React.FC<any>;
 };
 
-const ContactBox = ({ children }:childrenProp) => (
+const ContactBox = ({ children }: childrenProp) => (
   <div className="relative p-4 h-40 group transform transition-all duration-300 hover:scale-105">
     <div className="p-6 bg-dark/50 backdrop-blur-sm rounded-lg">
       <div className="absolute top-0 left-0 w-24 h-[0.2rem] bg-highlight transform origin-left transition-transform duration-500 group-hover:scale-x-150"></div>
@@ -77,7 +77,7 @@ const BackgroundLayout = ({ children, pic }: Props) => {
           backgroundPosition: "center",
         }}
       >
-        <div className="absolute inset-0 bg-[#161616]/90 ssm:bg-[#161616]/60 backdrop-blur-sm transition-all duration-500" />
+        <div className="absolute inset-0 bg-[#161616]/70 ssm:bg-[#161616]/60 backdrop-blur-sm transition-all duration-500" />
       </div>
       <div className="relative z-10">{children}</div>
     </div>
@@ -102,7 +102,7 @@ const Home = () => {
 
   return (
     <div className="bg-[#161616] min-h-screen text-title">
-      <BackgroundLayout pic="url('src/assets/bgsec1.jpeg')">
+      <BackgroundLayout pic="url('/bgsec1.jpeg')">
         <div className="relative h-screen p-body">
           {/* Social Links */}
           <div className="absolute top-0 flex flex-col items-center z-20">
@@ -235,8 +235,8 @@ const Home = () => {
         </div>
       </div>
 
-       {/* Contact Section */}
-       <div className="p-body pt-24 pb-24">
+      {/* Contact Section */}
+      <div className="p-body pt-24 pb-24">
         <h2 className="text-5xl font-heading font-bold mb-16 text-center text-title transform transition-all duration-500 hover:scale-105">
           <span className="font-bold text-highlight">&lt;</span>
           Contact me
@@ -248,23 +248,31 @@ const Home = () => {
             {/* Left Column */}
             <div className="w-full md:w-1/2 text-soft space-y-8">
               <div className="relative">
-                <span className="font-bold text-highlight absolute -left-4">&lt;</span>
+                <span className="font-bold text-highlight absolute -left-4">
+                  &lt;
+                </span>
                 <p className="text-lg leading-relaxed">
-                  Contact me on the following platforms. I'm always open to new opportunities
-                  and collaborations. Let's create something amazing together!
+                  Contact me on the following platforms. I'm always open to new
+                  opportunities and collaborations. Let's create something
+                  amazing together!
                 </p>
-                <span className="font-bold text-highlight absolute -right-4">&gt;</span>
+                <span className="font-bold text-highlight absolute -right-4">
+                  &gt;
+                </span>
               </div>
 
               <div className="space-y-6">
                 <ul className="flex gap-6 mt-8">
                   {socialLinks.map((link, index) => (
-                    <li key={index} className="transform transition-all duration-300 hover:scale-110">
-                      <a 
+                    <li
+                      key={index}
+                      className="transform transition-all duration-300 hover:scale-110"
+                    >
+                      <a
                         href={link.href}
                         className="flex items-center gap-2 text-soft hover:text-highlight transition-colors group"
                       >
-                        <link.icon className="w-8 h-8" fill="#000"/>
+                        <link.icon className="w-8 h-8" fill="#000" />
                         <ArrowUpRight className="w-4 h-4 opacity-0 -translate-y-1 group-hover:opacity-100 group-hover:translate-y-0 transition-all" />
                       </a>
                     </li>
@@ -276,12 +284,12 @@ const Home = () => {
             {/* Right Column */}
             <div className="w-full md:w-[40%]">
               <ContactBox>
-                <a 
-                  href="mailto:adujoy05@gmail.com" 
+                <a
+                  href="mailto:adujoy05@gmail.com"
                   className="flex gap-8 items-center group hover:text-highlight transition-colors"
                 >
                   <div className="p-3 rounded-full bg-highlight/10 group-hover:bg-highlight/20 transition-colors">
-                    <Mail size={35} strokeWidth={2.5}/>
+                    <Mail size={35} strokeWidth={2.5} />
                   </div>
                   <div className="flex flex-col">
                     <span className="text-sm text-soft">Email me at</span>
@@ -308,13 +316,17 @@ const Home = () => {
 
             <ul className="flex gap-8 cursor-pointer ssm:hidden">
               {navItems.map((item) => (
-                <li 
-                  key={item} 
+                <li
+                  key={item}
                   className="text-soft hover:text-highlight transition-colors relative group"
                 >
-                  <span className="absolute -left-2 text-highlight opacity-0 group-hover:opacity-100 transition-opacity">&lt;</span>
+                  <span className="absolute -left-2 text-highlight opacity-0 group-hover:opacity-100 transition-opacity">
+                    &lt;
+                  </span>
                   {item}
-                  <span className="absolute -right-2 text-highlight opacity-0 group-hover:opacity-100 transition-opacity">&gt;</span>
+                  <span className="absolute -right-2 text-highlight opacity-0 group-hover:opacity-100 transition-opacity">
+                    &gt;
+                  </span>
                 </li>
               ))}
             </ul>

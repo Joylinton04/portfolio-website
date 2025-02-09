@@ -61,7 +61,7 @@ const LevelUI: React.FC<LevelUIProps> = ({ length, label }) => {
 };
 
 const BorderBox = ({ children, className=""}:childrenProp) => (
-  <div className={`relative p-4`}>
+  <div className={`relative p-4 ${className}`}>
     <div className="absolute top-0 left-0 w-24 h-[0.2rem] bg-title transform origin-left transition-transform duration-500 hover:scale-x-150"></div>
     <div className="absolute top-0 left-0 w-[0.2rem] h-24 bg-title transform origin-top transition-transform duration-500 hover:scale-y-150"></div>
     <div className="absolute bottom-0 right-0 w-24 h-[0.2rem] bg-title transform origin-right transition-transform duration-500 hover:scale-x-150"></div>
