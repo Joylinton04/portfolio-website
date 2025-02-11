@@ -102,7 +102,7 @@ const Stack = () => {
 
   return (
     <div className="min-h-screen text-soft/90 p-body font-body">
-      <h2 className="text-5xl font-heading font-bold mb-12 text-center text-title transform transition-all duration-500 hover:scale-105">
+      <h2 className="text-5xl font-heading font-bold mb-12 text-center text-title transform transition-all duration-500 hover:scale-105 ssm:text-4xl">
         <span className="text-highlight">&lt;</span>
         Stack
         <span className="text-highlight">&gt;</span>
@@ -131,7 +131,7 @@ const Stack = () => {
 
       {/* Tools Section */}
       <div className="mt-16">
-        <h1 className="text-5xl text-center text-white font-heading mt-8 mb-12 transform transition-all duration-500 hover:scale-105">
+        <h1 className="text-5xl text-center text-white font-heading mt-8 mb-12 transform transition-all duration-500 hover:scale-105 ssm:text-4xl">
           Tools
         </h1>
         <div className="flex gap-20 ssm:gap-10 sssm:gap-5 justify-evenly flex-wrap">

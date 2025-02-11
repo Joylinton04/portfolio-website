@@ -27,7 +27,7 @@ type socialLinksProp = {
 };
 
 const ContactBox = ({ children }: childrenProp) => (
-  <div className="relative p-4 h-40 group transform transition-all duration-300 hover:scale-105">
+  <div className="relative p-4 h-40 group transform transition-all duration-300 hover:scale-105 ssm:p-2">
     <div className="p-6 bg-dark/50 backdrop-blur-sm rounded-lg">
       <div className="absolute top-0 left-0 w-24 h-[0.2rem] bg-highlight transform origin-left transition-transform duration-500 group-hover:scale-x-150"></div>
       <div className="absolute top-0 left-0 w-[0.2rem] h-24 bg-highlight transform origin-top transition-transform duration-500 group-hover:scale-y-150"></div>
@@ -169,7 +169,7 @@ const Home = () => {
                 : "translate-y-10 opacity-0"
             }`}
           >
-            <h1 className="font-heading text-6xl ssm:text-4xl">
+            <h1 className="font-heading text-6xl ssm:text-4xl sssm:text-3xl">
               <span className="text-highlight">FRONT-END </span>
               <span className="h-1 w-[70px] ssm:w-[45px] bg-title block"></span>
               <span className="ml-[9rem] ssm:ml-[5rem]">DEVELOPER</span>
@@ -200,19 +200,19 @@ const Home = () => {
 
       {/* Projects Section */}
       <div className="mt-10 p-body">
-        <div className="mt-10">
+        <div className="mt-10 ssm:p-0">
           <Projects />
         </div>
       </div>
 
       <div className="px-4">
-        <h2 className="text-5xl font-heading font-bold mb-12 text-center text-title">
+        <h2 className="text-5xl font-heading font-bold mb-12 text-center text-title ssm:text-3xl">
           <span className="text-highlight">&lt;</span>
           About me
           <span className="text-highlight">&gt;</span>
         </h2>
         <div className="flex justify-center text-soft/90 mt-10 font-body">
-          <div className="prose prose-invert text-lg mt-4 w-1/2 ssm:w-[90%] leading-relaxed">
+          <div className="prose prose-invert text-lg mt-4 w-1/2 ssm:w-full leading-relaxed ssm:text-sm">
             <p className="mb-6">
               I am a skilled frontend developer with 3 years of professional
               experience in crafting intuitive and user-friendly web interfaces.
@@ -236,8 +236,8 @@ const Home = () => {
       </div>
 
       {/* Contact Section */}
-      <div className="p-body pt-24 pb-24">
-        <h2 className="text-5xl font-heading font-bold mb-16 text-center text-title transform transition-all duration-500 hover:scale-105">
+      <div className="p-body pt-24 pb-24 ssm:px-2">
+        <h2 className="text-5xl font-heading font-bold mb-16 text-center text-title transform transition-all duration-500 hover:scale-105 ssm:text-3xl">
           <span className="font-bold text-highlight">&lt;</span>
           Contact me
           <span className="font-bold text-highlight">&gt;</span>
@@ -282,18 +282,18 @@ const Home = () => {
             </div>
 
             {/* Right Column */}
-            <div className="w-full md:w-[40%]">
+            <div className="w-full md:w-[40%] ssm:w-full">
               <ContactBox>
                 <a
                   href="mailto:adujoy05@gmail.com"
                   className="flex gap-8 items-center group hover:text-highlight transition-colors"
                 >
                   <div className="p-3 rounded-full bg-highlight/10 group-hover:bg-highlight/20 transition-colors">
-                    <Mail size={35} strokeWidth={2.5} />
+                    <Mail size={35} strokeWidth={2.5}/>
                   </div>
                   <div className="flex flex-col">
-                    <span className="text-sm text-soft">Email me at</span>
-                    <span className="text-lg font-medium group-hover:text-highlight transition-colors">
+                    <span className="text-sm text-soft ssm:text-xs">Email me at</span>
+                    <span className="text-lg font-medium group-hover:text-highlight transition-colors ssm:text-base">
                       adujoy05@gmail.com
                     </span>
                   </div>
@@ -309,7 +309,7 @@ const Home = () => {
       {/* Footer Section */}
       <footer className="py-12 p-body bg-dark/50 backdrop-blur-sm">
         <div className="max-w-7xl mx-auto">
-          <div className="flex justify-between items-center font-heading flex-wrap gap-8">
+          <div className="flex justify-between items-center font-heading flex-wrap gap-8 ssm:flex-col">
             <span className="text-xl text-soft hover:text-highlight transition-colors cursor-pointer">
               <span className="text-title font-bold">MY</span> PORTFOLIO
             </span>

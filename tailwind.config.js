@@ -23,7 +23,7 @@ export default {
         'xxl': {'max': '1280px'},
         'lgg': {'max': '1024px'},
         'mdd': {'max': '820px'},
-        'ssm': {'max': '639px'},
+        'ssm': {'max': '700px'},
         'sssm': {'max': '390px'},
       },
       animation: {
